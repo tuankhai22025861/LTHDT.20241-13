@@ -16,5 +16,12 @@ public class TestShellSort {
 
         System.out.println("Sorted Array:");
         shellSort.displaySteps();
+
+        System.out.println("Sorted Array (dung getArray):");
+        int[] sortedArray = shellSort.getArray();
+        for (int num : sortedArray) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
     }
 }

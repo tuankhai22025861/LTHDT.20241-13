@@ -19,4 +19,9 @@ abstract class SortAlgorithm {
     public void setArray(int[] array) {
         this.array = array;
     }
+
+    // Getter cho array
+    public int[] getArray() {
+        return array;
+    }
 }
