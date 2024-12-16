@@ -16,5 +16,12 @@ public class TestSelectionSort {
 
         System.out.println("Sorted Array:");
         selectionSort.displaySteps();
+        
+        System.out.println("Sorted Array (dung getArray):");
+        int[] sortedArray = selectionSort.getArray();
+        for (int num : sortedArray) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
     }
 }

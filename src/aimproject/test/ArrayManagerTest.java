@@ -1,5 +1,6 @@
-package aimproject.aim;
+package aimproject.test;
 
+import aimproject.aim.*;
 import java.util.Scanner;
 
 public class ArrayManagerTest {
