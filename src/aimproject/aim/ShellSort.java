@@ -14,6 +14,7 @@ public class ShellSort extends SortAlgorithm{
                 }
                 array[j] = temp;
                 displaySteps();
+                saveStep();
             }
         }
     }

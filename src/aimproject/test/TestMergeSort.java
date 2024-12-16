@@ -16,13 +16,22 @@ public class TestMergeSort {
 
         System.out.println("Sorted Array:");
         mergeSort.displaySteps();
-        // Testing method getArray 
+        // Test method getArray 
         System.out.println("Sorted Array (dung getArray):");
         int[] sortedArray = mergeSort.getArray();
         for (int num : sortedArray) {
             System.out.print(num + " ");
         }
         System.out.println();
+
+        // Test getSteps
+        System.out.println("Steps of sorting:");
+        for (int[] step : mergeSort.getSteps()) {
+            for (int num : step) {
+                System.out.print(num + " ");
+            }
+            System.out.println();
+        }
     }
     
 }

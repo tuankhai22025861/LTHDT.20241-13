@@ -14,6 +14,7 @@ public class MergeSort extends SortAlgorithm {
             mergeSort(mid+1, right);
             merge(left, mid, right);
             displaySteps();
+            saveStep();
         }
     }
 
