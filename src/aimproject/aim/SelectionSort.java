@@ -16,6 +16,7 @@ public class SelectionSort extends SortAlgorithm {
             array[minIdx] = array[i];
             array[i] = tmp;
             displaySteps();
+            saveStep();
         }
     }
 }

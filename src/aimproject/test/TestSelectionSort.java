@@ -23,5 +23,14 @@ public class TestSelectionSort {
             System.out.print(num + " ");
         }
         System.out.println();
+
+        // Test getSteps
+        System.out.println("Steps of sorting:");
+        for (int[] step : selectionSort.getSteps()) {
+            for (int num : step) {
+                System.out.print(num + " ");
+            }
+            System.out.println();
+        }
     }
 }
