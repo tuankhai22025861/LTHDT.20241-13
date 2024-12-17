@@ -4,7 +4,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class ArrayManager {
-    // Attribute to store the array
     private int[] array;
 
     // Constructor
@@ -15,28 +14,26 @@ public class ArrayManager {
     // Method to create a random array
     public int[] createRandomArray(int size) {
         if (size <= 0) {
-            throw new IllegalArgumentException("Size must be greater than 0");
+            throw new IllegalArgumentException("so luong phan tu phai lon hon 0");
         }
         Random random = new Random();
         array = new int[size];
         for (int i = 0; i < size; i++) {
-            array[i] = random.nextInt(100); // Generates numbers between 0 and 99
+            array[i] = random.nextInt(1000); // random 0-1000
         }
         return array;
     }
 
-    // Method to input an array manually
+    // nhap phan tu
     public int[] inputArray() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the size of the array: ");
+        System.out.print("chon so luong phan tu: ");
         int size = scanner.nextInt();
         if (size <= 0) {
-            throw new IllegalArgumentException("Size must be greater than 0");
+            throw new IllegalArgumentException("so luong phan tu phai lon hon 0");
         }
         array = new int[size];
-        System.out.println("Enter " + size + " elements:");
         for (int i = 0; i < size; i++) {
-            System.out.print("Element " + (i + 1) + ": ");
             array[i] = scanner.nextInt();
         }
         return array;
@@ -47,16 +44,5 @@ public class ArrayManager {
         return array;
     }
 
-    // Method to display the array
-    public void displayArray() {
-        if (array == null) {
-            System.out.println("Array is not initialized.");
-            return;
-        }
-        System.out.print("Array: ");
-        for (int num : array) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
-    }
+    
 }
