@@ -1,4 +1,4 @@
-package aimproject.aim;
+package application;
 
 public class SelectionSort extends SortAlgorithm {
     @Override
@@ -16,6 +16,7 @@ public class SelectionSort extends SortAlgorithm {
             array[minIdx] = array[i];
             array[i] = tmp;
             displaySteps();
+            saveStep();
         }
     }
 }

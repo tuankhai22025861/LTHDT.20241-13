@@ -1,4 +1,4 @@
-package aimproject.aim;
+package application;
 
 public class ShellSort extends SortAlgorithm{
     @Override
@@ -14,6 +14,7 @@ public class ShellSort extends SortAlgorithm{
                 }
                 array[j] = temp;
                 displaySteps();
+                saveStep();
             }
         }
     }
