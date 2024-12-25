@@ -1,4 +1,4 @@
-package aimproject.aim;
+package application;
 
 public class SelectionSort extends SortAlgorithm {
     @Override

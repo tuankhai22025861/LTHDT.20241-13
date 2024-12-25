@@ -21,21 +21,13 @@ import javafx.scene.control.ListView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class MainController implements Initializable {
+public class MainController extends GeneralController implements Initializable {
 	
     @FXML
     private ComboBox<String> myComboBox;
 	
 	@FXML 
 	private Label myLabel;
-	
-	@FXML
-	private AnchorPane scenePane;
-	
-	private Stage stage;
-	private Scene scene;
-	private Parent root;
-	
 	
 	String[] algorithms = {"Selection Sort", "Merge Sort", "Shell Sort"};
 	
@@ -62,18 +54,6 @@ public class MainController implements Initializable {
             stage.setScene(scene);
             stage.show();			
 		}
-	}
-	
-	public void quit(ActionEvent event) {
-		Alert alert = new Alert(AlertType.CONFIRMATION);
-		alert.setTitle("Cảnh báo");
-		alert.setContentText("Bạn có chắc muốn out không?");
-		
-        Optional<ButtonType> result = alert.showAndWait();
-        if (result.isPresent() && result.get() == ButtonType.OK) {
-            Stage stage = (Stage) scenePane.getScene().getWindow();
-            stage.close();
-        }
 	}
 }
 	
