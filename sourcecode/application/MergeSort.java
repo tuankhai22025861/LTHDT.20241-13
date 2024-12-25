@@ -1,4 +1,4 @@
-package aimproject.aim;
+package application;
 
 public class MergeSort extends SortAlgorithm {
     @Override
@@ -23,11 +23,11 @@ public class MergeSort extends SortAlgorithm {
         int n2 = right - (mid + 1) + 1;
         
         int[] L = new int[n1];
-        int[] R = new int[n2]; // Cap phat bo nho cho 2 mang L va R
+        int[] R = new int[n2]; 
         
-        for(int i = 0; i < n1; i++) L[i] = array[left + i]; // Mang L chua cac phan tu ben phai
-        for(int j = 0; j < n2; j++) R[j] = array[mid + 1 + j]; // Mang R chua cac phan tu ben trai cua mang
-
+        for(int i = 0; i < n1; i++) L[i] = array[left + i]; 
+        for(int j = 0; j < n2; j++) R[j] = array[mid + 1 + j]; 
+        
         int i = 0, j = 0, k = left;
         while(i < n1 && j < n2){
             if(L[i] <= R[j]){
